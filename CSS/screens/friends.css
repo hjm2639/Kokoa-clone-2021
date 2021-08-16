@@ -1,15 +1,20 @@
 #friends-display-link {
-  display: block;
-  text-align: center;
-  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
   padding: 15px 0px;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: -15px;
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#friends-display-link p {
+  margin: 0 10px;
 }
 
 .friends-screen {
@@ -29,7 +34,7 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes hideSplashScreen {
@@ -48,7 +53,7 @@
   width: 100vw;
   height: 100vh;
   top: 0;
-  background-color: var(--yellow);
+  background-color: var(--black);
   display: flex;
   justify-content: center;
   align-items: center;

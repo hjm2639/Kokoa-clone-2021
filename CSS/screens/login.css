@@ -10,11 +10,27 @@
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
+  transform: scale(0);
+  animation: TitleCreate 2s ease-in-out forwards;
+}
+
+@keyframes TitleCreate {
+  0% {
+    transform: 0;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .welcome-header__text {
   width: 60%;
   opacity: 0.7;
+  transform: scale(0);
+  animation: TitleCreate 1s 1s ease-in-out forwards;
 }
 
 #login-form {
@@ -25,7 +41,7 @@
 
 #login-form input {
   border: none;
-  padding: 15px 0px;
+  padding: 15px 20px;
   font-size: 18px;
   margin-bottom: 25px;
 }
@@ -41,14 +57,21 @@
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: white;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--blue);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
+  color: white;
+  transition: all 0.5s;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow);
+  color: black;
 }
 
 #login-form a {
@@ -57,4 +80,9 @@
   /* inherit 상속 명령어 */
   color: inherit;
   font-size: 13px;
+}
+
+#login-form a:hover {
+  color: var(--yellow);
+  transition: color 0.3s;
 }

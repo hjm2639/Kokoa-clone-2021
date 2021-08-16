@@ -1,6 +1,6 @@
 /* 구글 폰트 CSS 추가 */
 /* 폰트는 사용할 폰트만 추가하는 것이 좋다. 폰트 추가할수록 웹사이트가 무거워짐 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -23,8 +23,9 @@
 @import "screens/chat.css";
 
 body {
-  color: #2e363e;
-  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  background-color: var(--black);
+  font-family: "Roboto", sans-serif;
 }
 
 .main-screen {
